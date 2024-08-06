@@ -148,3 +148,100 @@ footer {
   color: darkred;
   transition: all 0.5s ease 0s;
 }
+
+@media only screen and (max-width: 1440px) {
+  section {
+    max-width: 95%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  header {
+    padding: 20px 0px;
+  }
+  #logo {
+    padding: 0px;
+  }
+  input[type='checkbox'] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    background: none;
+  }
+  input[type='checkbox']:focus {
+    background: none;
+  }
+  label {
+    /* float: right; */
+    padding: 8px 0px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  input[type='checkbox']:checked ~ nav {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 53px;
+    background: navy;
+    padding: 0px;
+    z-index: 99;
+  }
+
+  nav ul {
+    width: auto;
+  }
+  nav ul li {
+    float: none;
+    padding: 0px;
+    width: 100%;
+    display: table;
+  }
+  nav ul li a {
+    color: aqua;
+    font-size: 15px;
+    padding: 10px 20px;
+    display: block;
+    border-bottom: 1px solid green;
+  }
+  nav ul li a i {
+    color: green;
+    padding-right: 13px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .content {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  h1 {
+    padding: 25px 0px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  section {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 20px;
+  }
+  label {
+    padding: 50px 0px;
+  }
+  #logo {
+    font-size: 20px;
+  }
+  nav {
+    top: 47px;
+  }
+}
